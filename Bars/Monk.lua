@@ -5,37 +5,37 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Buffs = {
-			GetSpellInfo(122278), -- Dampen Harm
-			GetSpellInfo(115213), -- Avert Harm
-			GetSpellInfo(124280), -- Touch of Karma
-			GetSpellInfo(115308), -- Elusive Brew
-			GetSpellInfo(115203), -- Fortifying Brew
-			GetSpellInfo(124682), -- Enveloping Mist
-			GetSpellInfo(115151), -- Renewing Mist
-			GetSpellInfo(115175), -- Soothing Mist
-			GetSpellInfo(115307), -- Shuffle
-			GetSpellInfo(120274), -- Tiger Strikes
-			GetSpellInfo(118636), -- Power Guard
-			GetSpellInfo(121125), -- Death Note
-			GetSpellInfo(125359), -- Tiger Power
-			GetSpellInfo(115288), -- Energizing Brew
-			GetSpellInfo(115295), -- Guard
-			GetSpellInfo(116768), -- Combo Breaker: Blackout Kick
-			GetSpellInfo(118864), -- Combo Breaker: Tiger Palm
-			GetSpellInfo(101546), -- Spinning Crane Kick
-			GetSpellInfo(116740), -- Tigereye Brew
-			(GetSpellInfo(122783)), -- Diffuse Magic
+			C_Spell.GetSpellName(122278), -- Dampen Harm
+			C_Spell.GetSpellName(115213), -- Avert Harm
+			C_Spell.GetSpellName(124280), -- Touch of Karma
+			C_Spell.GetSpellName(115308), -- Elusive Brew
+			C_Spell.GetSpellName(115203), -- Fortifying Brew
+			C_Spell.GetSpellName(124682), -- Enveloping Mist
+			C_Spell.GetSpellName(115151), -- Renewing Mist
+			C_Spell.GetSpellName(115175), -- Soothing Mist
+			C_Spell.GetSpellName(115307), -- Shuffle
+			C_Spell.GetSpellName(120274), -- Tiger Strikes
+			C_Spell.GetSpellName(118636), -- Power Guard
+			C_Spell.GetSpellName(121125), -- Death Note
+			C_Spell.GetSpellName(125359), -- Tiger Power
+			C_Spell.GetSpellName(115288), -- Energizing Brew
+			C_Spell.GetSpellName(115295), -- Guard
+			C_Spell.GetSpellName(116768), -- Combo Breaker: Blackout Kick
+			C_Spell.GetSpellName(118864), -- Combo Breaker: Tiger Palm
+			C_Spell.GetSpellName(101546), -- Spinning Crane Kick
+			C_Spell.GetSpellName(116740), -- Tigereye Brew
+			(C_Spell.GetSpellName(122783)), -- Diffuse Magic
 		},
 		Debuffs = {
-			GetSpellInfo(115804), -- Mortal Wounds
-			GetSpellInfo(128531), -- Blackout Kick
-			GetSpellInfo(107428), -- Rising Sun Kick
-			(GetSpellInfo(115180)), -- Dizzying Haze
+			C_Spell.GetSpellName(115804), -- Mortal Wounds
+			C_Spell.GetSpellName(128531), -- Blackout Kick
+			C_Spell.GetSpellName(107428), -- Rising Sun Kick
+			(C_Spell.GetSpellName(115180)), -- Dizzying Haze
 		},
 		Misc = {
-			GetSpellInfo(116095), -- Disable
-			GetSpellInfo(119381), -- Leg Sweep
-			(GetSpellInfo(115078)), -- Paralysis
+			C_Spell.GetSpellName(116095), -- Disable
+			C_Spell.GetSpellName(119381), -- Leg Sweep
+			(C_Spell.GetSpellName(115078)), -- Paralysis
 		},
 	}
 end

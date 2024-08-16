@@ -21,6 +21,7 @@ local ipairs = _G.ipairs
 local UnitIsUnit = _G.UnitIsUnit
 local IsClassic = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC)
 
+
 local _, enClass = UnitClass("player")
 local hasPet = enClass == "HUNTER"
 	or enClass == "WARLOCK"
@@ -440,12 +441,13 @@ do
 		pet = true,
 		vehicle = true,
 	}
+
 	function ClassTimer:GetBuffs(unit, db)
 		local currentTime = GetTime()
 		if db.buffs then
 			local i = 1
 			while true do
-				local name, texture, count, _, duration, endTime, caster = UnitBuff(unit, i)
+				local name, texture, count, _, duration, endTime, caster = AuraUtil.UnpackAuraData(C_UnitAuras.GetBuffDataByIndex(unit, i))
 				if not name then
 					break
 				end
@@ -488,7 +490,7 @@ do
 		if db.debuffs then
 			local i = 1
 			while true do
-				local name, texture, count, debuffType, duration, endTime, caster = UnitDebuff(unit, i)
+				local name, texture, count, debuffType, duration, endTime, caster, _, _, spellId = AuraUtil.UnpackAuraData(C_UnitAuras.GetDebuffDataByIndex(unit, i))
 				if not name then
 					break
 				end

@@ -5,16 +5,16 @@ end
 function ClassTimer:CreateTimers()
 	return {
 		Buffs = {
-			GetSpellInfo(357208), -- Fire Breath
-			GetSpellInfo(364342), -- Blessing of the Bronze
-			(GetSpellInfo(390386)), -- Fury of the Aspects
+			C_Spell.GetSpellName(357208), -- Fire Breath
+			C_Spell.GetSpellName(364342), -- Blessing of the Bronze
+			(C_Spell.GetSpellName(390386)), -- Fury of the Aspects
 		},
 		Talents = {
-			GetSpellInfo(374348), -- Renewing Blaze
-			GetSpellInfo(363916), -- Obsidian Scales
-			GetSpellInfo(360806), -- Sleep Walk
-			GetSpellInfo(375087), -- Dragonrage
-			(GetSpellInfo(370452)), -- Shattering Star
+			C_Spell.GetSpellName(374348), -- Renewing Blaze
+			C_Spell.GetSpellName(363916), -- Obsidian Scales
+			C_Spell.GetSpellName(360806), -- Sleep Walk
+			C_Spell.GetSpellName(375087), -- Dragonrage
+			(C_Spell.GetSpellName(370452)), -- Shattering Star
 		},
 	}
 end
